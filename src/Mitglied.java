@@ -16,7 +16,7 @@ public class Mitglied extends Person implements Serializable{
     private int angemeldet;
     private String studiumGenerale;
     private String email_eRacing;
-    private String fuererschein;
+    private String fuehrerschein;
     private String vermerk;
     private int werkstattregeln;
     private int serverzugang;
@@ -41,8 +41,8 @@ public class Mitglied extends Person implements Serializable{
         return email_eRacing;
     }
 
-    public String getFuererschein() {
-        return fuererschein;
+    public String getFuehrerschein() {
+        return fuehrerschein;
     }
 
     public String getVermerk() {
@@ -81,8 +81,8 @@ public class Mitglied extends Person implements Serializable{
         this.email_eRacing = email_eRacing;
     }
 
-    public void setFuererschein(String fuererschein) {
-        this.fuererschein = fuererschein;
+    public void setFuehrerschein(String fuehrerschein) {
+        this.fuehrerschein = fuehrerschein;
     }
 
     public void setVermerk(String vermerk) {
@@ -113,12 +113,12 @@ public class Mitglied extends Person implements Serializable{
            //default constr
     }
     
-    public Mitglied(String vorname, String name, String telefonnr, String email, String strasseHsnr, int plz, String ort,int angemeldet, String studiumGenerale, String email_eRacing, String fuererschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
-        super(vorname, name, telefonnr, email, strasseHsnr, plz, ort);
+    public Mitglied(String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort,int angemeldet, String studiumGenerale, String email_eRacing, String fuehrerschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
+        super(vorname, name, telefonnr, email, strasse_Hsnr, plz, ort);
         this.angemeldet = angemeldet;
         this.studiumGenerale = studiumGenerale;
         this.email_eRacing = email_eRacing;
-        this.fuererschein = fuererschein;
+        this.fuehrerschein = fuehrerschein;
         this.vermerk = vermerk;
         this.werkstattregeln = werkstattregeln;
         this.serverzugang = serverzugang;

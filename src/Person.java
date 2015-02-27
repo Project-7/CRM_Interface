@@ -17,19 +17,19 @@ public abstract class Person implements Serializable{
     private String name;
     private String telefonnr;
     private String email;
-    private String strasseHsnr;
+    private String strasse_Hsnr;
     private int plz;
     private String ort;
 
     public Person() {
     }
 
-    public Person(String vorname, String name, String telefonnr, String email, String strasseHsnr, int plz, String ort) {
+    public Person(String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort) {
         this.vorname = vorname;
         this.name = name;
         this.telefonnr = telefonnr;
         this.email = email;
-        this.strasseHsnr = strasseHsnr;
+        this.strasse_Hsnr = strasse_Hsnr;
         this.plz = plz;
         this.ort = ort;
     }
@@ -66,12 +66,12 @@ public abstract class Person implements Serializable{
         this.email = email;
     }
 
-    public String getStrasseHsnr() {
-        return strasseHsnr;
+    public String getStrasse_Hsnr() {
+        return strasse_Hsnr;
     }
 
-    public void setStrasseHsnr(String strasseHsnr) {
-        this.strasseHsnr = strasseHsnr;
+    public void setStrasse_Hsnr(String strasse_Hsnr) {
+        this.strasse_Hsnr = strasse_Hsnr;
     }
 
     public int getPlz() {
