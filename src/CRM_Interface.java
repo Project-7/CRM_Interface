@@ -14,6 +14,16 @@ import java.rmi.RemoteException;
  */
 public interface CRM_Interface extends Remote {
     
-    public String writeNewMitgliedInDatabase(Mitglied m) throws RemoteException;
+    //neues Mitglied, das von Client geliefert wird, in Datenbank speichern
+    public String insertMitglied(Mitglied m) throws RemoteException;
+    
+    //Abfragen vom Client, dass bestimmte Mitglieder zurück gibt und anzeigt
+    public void selectMitglied(String... args) throws RemoteException;
+    
+    //Daten eines Mitgliedes werden geändert
+    public String updateMitglied(Mitglied m) throws RemoteException;
+    
+    //Daten eines Mitglieds werden gelöscht (niemals das ganze Mitglied)
+    public String deleteMitglied(Mitglied m) throws RemoteException;
            
 }
