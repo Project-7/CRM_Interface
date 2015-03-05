@@ -126,4 +126,18 @@ public class Mitglied extends Person implements Serializable{
         this.foto_vorhanden = foto_vorhanden;
         this.Position = Position;
     } 
+    public Mitglied(int mitgliederID, String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort,int angemeldet, String studiumGenerale, String email_eRacing, String fuehrerschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
+        super(vorname, name, telefonnr, email, strasse_Hsnr, plz, ort);
+        this.mitgliederID= mitgliederID;
+        this.angemeldet = angemeldet;
+        this.studiumGenerale = studiumGenerale;
+        this.email_eRacing = email_eRacing;
+        this.fuehrerschein = fuehrerschein;
+        this.vermerk = vermerk;
+        this.werkstattregeln = werkstattregeln;
+        this.serverzugang = serverzugang;
+        this.staatsangehoerigkeit = staatsangehoerigkeit;
+        this.foto_vorhanden = foto_vorhanden;
+        this.Position = Position;
+    }
 }

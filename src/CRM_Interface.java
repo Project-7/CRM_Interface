@@ -1,6 +1,8 @@
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,7 +20,7 @@ public interface CRM_Interface extends Remote {
     public String insertMitglied(Mitglied m) throws RemoteException;
     
     //Abfragen vom Client, dass bestimmte Mitglieder zurück gibt und anzeigt
-    public void selectMitglied(String... args) throws RemoteException;
+    public ArrayList<Mitglied> selectMitglied(String... args) throws RemoteException;
     
     //Daten eines Mitgliedes werden geändert
     public String updateMitglied(Mitglied m) throws RemoteException;
