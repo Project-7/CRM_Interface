@@ -28,7 +28,7 @@ public interface CRM_Interface extends Remote {
     //Daten eines Mitgliedes werden geändert
     public String updateMitglied(Mitglied m) throws RemoteException;
     
-    //Daten eines Mitglieds werden gelöscht (niemals das ganze Mitglied)
-    public String deleteMitglied(Mitglied m) throws RemoteException;
+    //Daten eines Mitglieds werden gelöscht (nicht das ganze Mitglied)
+    public String deleteMitglied(int mID) throws RemoteException;
            
 }
