@@ -1,3 +1,6 @@
+
+import java.io.Serializable;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -7,7 +10,7 @@
  *
  * @author Kalya
  */
-public class Team {
+public class Team implements Serializable{
 
     private String team;
 

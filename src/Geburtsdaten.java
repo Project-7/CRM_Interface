@@ -1,10 +1,13 @@
 
+import java.io.Serializable;
+
+
 
 /**
  *
  * @author MarkusH
  */
-public class Geburtsdaten {
+public class Geburtsdaten implements Serializable{
     
     private int geburtsID;
     private String geburtsdatum;
