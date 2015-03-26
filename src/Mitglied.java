@@ -14,7 +14,6 @@ public class Mitglied extends Person implements Serializable{
     
     private int mitgliederID;
     private int angemeldet;
-    private String studiumGenerale;
     private String email_eRacing;
     private String fuehrerschein;
     private String vermerk;
@@ -31,10 +30,6 @@ public class Mitglied extends Person implements Serializable{
 
     public int isAngemeldet() {
         return angemeldet;
-    }
-
-    public String getStudiumGenerale() {
-        return studiumGenerale;
     }
 
     public String getEmail_eRacing() {
@@ -73,10 +68,6 @@ public class Mitglied extends Person implements Serializable{
         this.angemeldet = angemeldet;
     }
 
-    public void setStudiumGenerale(String studiumGenerale) {
-        this.studiumGenerale = studiumGenerale;
-    }
-
     public void setEmail_eRacing(String email_eRacing) {
         this.email_eRacing = email_eRacing;
     }
@@ -113,10 +104,9 @@ public class Mitglied extends Person implements Serializable{
            //default constr
     }
     
-    public Mitglied(String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort,int angemeldet, String studiumGenerale, String email_eRacing, String fuehrerschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
+    public Mitglied(String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort,int angemeldet, String email_eRacing, String fuehrerschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
         super(vorname, name, telefonnr, email, strasse_Hsnr, plz, ort);
         this.angemeldet = angemeldet;
-        this.studiumGenerale = studiumGenerale;
         this.email_eRacing = email_eRacing;
         this.fuehrerschein = fuehrerschein;
         this.vermerk = vermerk;
@@ -126,11 +116,10 @@ public class Mitglied extends Person implements Serializable{
         this.foto_vorhanden = foto_vorhanden;
         this.Position = Position;
     } 
-    public Mitglied(int mitgliederID, String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort,int angemeldet, String studiumGenerale, String email_eRacing, String fuehrerschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
+    public Mitglied(int mitgliederID, String vorname, String name, String telefonnr, String email, String strasse_Hsnr, int plz, String ort,int angemeldet, String email_eRacing, String fuehrerschein, String vermerk, int werkstattregeln, int serverzugang, String staatsangehoerigkeit, int foto_vorhanden, String Position) {
         super(vorname, name, telefonnr, email, strasse_Hsnr, plz, ort);
         this.mitgliederID= mitgliederID;
         this.angemeldet = angemeldet;
-        this.studiumGenerale = studiumGenerale;
         this.email_eRacing = email_eRacing;
         this.fuehrerschein = fuehrerschein;
         this.vermerk = vermerk;

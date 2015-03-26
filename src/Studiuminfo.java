@@ -14,14 +14,14 @@ import java.io.Serializable;
 public class Studiuminfo implements Serializable{
     
     private int studID;
-    private int anfangssemester;
+    private int aktSemester; 
     private String studiengang;
 
     public Studiuminfo() {
     }
 
-    public Studiuminfo(int anfangssemester, String studiengang) {
-        this.anfangssemester = anfangssemester;
+    public Studiuminfo(int aktSemester, String studiengang) {
+        this.aktSemester = aktSemester;
         this.studiengang = studiengang;
     }
 
@@ -33,12 +33,12 @@ public class Studiuminfo implements Serializable{
         this.studID = studID;
     }
 
-    public int getAnfangssemester() {
-        return anfangssemester;
+    public int getAktSemester() {
+        return aktSemester;
     }
 
-    public void setAnfangssemester(int anfangssemester) {
-        this.anfangssemester = anfangssemester;
+    public void setAktSemester(int aktSemester) {
+        this.aktSemester = aktSemester;
     }
 
     public String getStudiengang() {

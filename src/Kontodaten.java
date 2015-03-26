@@ -16,14 +16,14 @@ public class Kontodaten implements Serializable{
     private int kontoID;
     private String kreditinstitut;
     private int kontonr;
-    private char iban;
+    private String iban; 
     private int blz;
-    private char bic;
+    private String bic; 
 
     public Kontodaten() {
     }
 
-    public Kontodaten(String kreditinstitut, int kontonr, char iban, int blz, char bic) {
+    public Kontodaten(String kreditinstitut, int kontonr, String iban, int blz, String bic) {
         this.kreditinstitut = kreditinstitut;
         this.kontonr = kontonr;
         this.iban = iban;
@@ -55,11 +55,11 @@ public class Kontodaten implements Serializable{
         this.kontonr = kontonr;
     }
 
-    public char getIban() {
+    public String getIban() {
         return iban;
     }
 
-    public void setIban(char iban) {
+    public void setIban(String iban) {
         this.iban = iban;
     }
 
@@ -71,11 +71,11 @@ public class Kontodaten implements Serializable{
         this.blz = blz;
     }
 
-    public char getBic() {
+    public String getBic() {
         return bic;
     }
 
-    public void setBic(char bic) {
+    public void setBic(String bic) {
         this.bic = bic;
     }
     
