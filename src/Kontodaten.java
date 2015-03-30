@@ -16,18 +16,18 @@ public class Kontodaten implements Serializable{
     private int kontoID;
     private String kreditinstitut;
     private int kontonr;
-    private String iban; 
     private int blz;
+    private String iban; 
     private String bic; 
 
     public Kontodaten() {
     }
 
-    public Kontodaten(String kreditinstitut, int kontonr, String iban, int blz, String bic) {
+    public Kontodaten(String kreditinstitut, int kontonr, int blz, String iban, String bic) {
         this.kreditinstitut = kreditinstitut;
         this.kontonr = kontonr;
-        this.iban = iban;
         this.blz = blz;
+        this.iban = iban;
         this.bic = bic;
     }
 

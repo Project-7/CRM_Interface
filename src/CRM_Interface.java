@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public interface CRM_Interface extends Remote {
     
     //neues Mitglied, das von Client geliefert wird, in Datenbank speichern
-    public String insertMitglied(Mitglied m, Geburtsdaten g) throws RemoteException;
+    public String insertMitglied(Mitglied m, Geburtsdaten g, Kontodaten k, Mitgliedsstatus st, Studiuminfo si, Team t) throws RemoteException;
        
     //Abfragen vom Client, dass bestimmte Mitglieder zurück gibt und anzeigt
     public ArrayList<Mitglied> selectMitglied(String... args) throws RemoteException;
