@@ -6,19 +6,25 @@ import java.io.Serializable;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author MarkusH
  */
-public class Mitgliedsstatus implements Serializable{
-    
+public class Mitgliedsstatus implements Serializable {
+
     private int statusID;
     private String mitglied_seit;
     private String austrittsdatum;
     private String mitgliedsstatus;
 
     public Mitgliedsstatus() {
+    }
+
+    public Mitgliedsstatus(int statusID, String mitglied_seit, String austrittsdatum, String mitgliedsstatus) {
+        this.statusID = statusID;
+        this.mitglied_seit = mitglied_seit;
+        this.austrittsdatum = austrittsdatum;
+        this.mitgliedsstatus = mitgliedsstatus;
     }
 
     public Mitgliedsstatus(String mitglied_seit, String austrittsdatum, String mitgliedsstatus) {
@@ -58,7 +64,5 @@ public class Mitgliedsstatus implements Serializable{
     public void setMitgliedsstatus(String mitgliedsstatus) {
         this.mitgliedsstatus = mitgliedsstatus;
     }
-    
-    
-    
+
 }

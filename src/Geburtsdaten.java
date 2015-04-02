@@ -21,6 +21,12 @@ public class Geburtsdaten implements Serializable{
         this.geburtsort = geburtsort;
     }
 
+    public Geburtsdaten(int geburtsID, String geburtsdatum, String geburtsort) {
+        this.geburtsID = geburtsID;
+        this.geburtsdatum = geburtsdatum;
+        this.geburtsort = geburtsort;
+    }
+
     public int getGeburtsID() {
         return geburtsID;
     }
