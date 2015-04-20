@@ -99,6 +99,39 @@ public interface CRM_Interface extends Remote {
      */
     public String updateGeburtsdaten(Geburtsdaten g) throws RemoteException;
     
+    /**
+     *
+     * @param k
+     * @return
+     * @throws RemoteException
+     */
+    public String updateKontodaten(Kontodaten k) throws RemoteException;
+    
+    /**
+     *
+     * @param st
+     * @return
+     * @throws RemoteException
+     */
+    public String updateMitgliedsstatus(Mitgliedsstatus st) throws RemoteException;
+    
+    /**
+     *
+     * @param si
+     * @return
+     * @throws RemoteException
+     */
+    public String updateStudiuminfo(Studiuminfo si) throws RemoteException;
+    
+    /**
+     *
+     * @param t
+     * @param ID
+     * @return
+     * @throws RemoteException
+     */
+    public String updateTeam(Team t, int ID) throws RemoteException;
+    
     //Daten eines Mitglieds werden gelöscht/auf NULL gesetzt (nicht das ganze Mitglied)
     /**
      *
