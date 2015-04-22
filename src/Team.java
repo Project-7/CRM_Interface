@@ -1,14 +1,10 @@
 
 import java.io.Serializable;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author Kalya
+ * @author MarkusH und RobertK
+ * @version 1.0
  */
 public class Team implements Serializable{
 

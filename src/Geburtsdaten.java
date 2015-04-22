@@ -1,11 +1,10 @@
 
 import java.io.Serializable;
 
-
-
 /**
  *
- * @author MarkusH
+ * @author MarkusH und RobertK
+ * @version 1.0
  */
 public class Geburtsdaten implements Serializable{
     
